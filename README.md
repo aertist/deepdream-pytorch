@@ -10,7 +10,7 @@ deepdream1.py = VGG16_EXPERIMENTAL
 
 deepdream2.py = GOOGLENET 
  # FOR GOOGLENET_IMAGENET (PLACES_365 NOT SUPPORTED FOR THIS MOEDL)
-    # LAYERS AVAILABLE: ['inception3b', 'inception4c', 'inception4d', 'inception4e', 'inception4a' , 'inception4b']
+    # LAYERS AVAILABLE: ['inception3b', 'inception4c', 'inception4d', 'inception4e', 'inception4a' , 'inception4b', 'inception4a', 'inception4b']
 
 deepdream3.py = RESNET50
 # FOR RESNET50_PLACES_365/IMAGENET 
