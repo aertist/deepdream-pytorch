@@ -17,7 +17,7 @@ class GoogLeNet(torch.nn.Module):
         else:
             raise Exception(f'Pretrained weights {pretrained_weights} not yet supported for {self.__class__.__name__} model.')
 
-        self.layer_names = ['inception3b', 'inception4c', 'inception4d', 'inception4e']
+        self.layer_names = ['inception3b', 'inception4c', 'inception4d', 'inception4e', 'inception4a', 'inception4b']
 
         self.conv1 = googlenet.conv1
         self.maxpool1 = googlenet.maxpool1
@@ -96,5 +96,5 @@ class GoogLeNet(torch.nn.Module):
 
         # Feel free to experiment with different layers.
         net_outputs = namedtuple("GoogLeNetOutputs", self.layer_names)
-        out = net_outputs(inception3b, inception4c, inception4d, inception4e)
+        out = net_outputs(inception3b, inception4c, inception4d, inception4e, inception4a, inception4b)
         return out
